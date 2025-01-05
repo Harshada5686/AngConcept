@@ -1,29 +1,15 @@
-<div class="example-container">
-  <form [formGroup]="options" class="loginform">
-    <h2>Login</h2>
-    <div>
-      <label>Select: </label>
-      <mat-radio-group [formControl]="floatLabelControl">
-        <mat-radio-button value="auto">Admin</mat-radio-button>
-        <mat-radio-button value="always">User</mat-radio-button>
-      </mat-radio-group>
-    </div>
-
-    <div class="example-form-fields">
-      <mat-form-field  >
-        <input class="inputfield" matInput placeholder="Enter your email" required />
-      </mat-form-field>
-      <mat-form-field>
-        <input class="inputfield" matInput placeholder="Enter your password" required />
-      </mat-form-field>
-
-
-    </div>
-    <div mat-dialog-actions class="btncontainer">
-      <button mat-button class="cancelbtn" (click)="onCancel()">Cancel</button>
-      <button mat-button class="cancelbtn" color="primary" (click)="onSave()">Save</button>
-    </div>
+<div class="login-container">
+  <form [formGroup]="options" class="login-form">
+    <h2 class="login-title">Log in</h2>
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Enter your username" required />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" placeholder="Enter your password" required />
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="login-btn">Log in</button>
+    <div class="signup-text">or, <a href="#">sign up</a></div>
   </form>
 </div>
-
-

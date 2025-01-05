@@ -1,37 +1,44 @@
-::ng-deep .mat-dialog-container {
-    width: 300px;
-  }
-  // :host {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  // }
-  .example-container{
-    display: flex;
-    justify-content:flex-start;
-    background-color: red;
-  }
-  .loginform{
-    background-color: rgb(124, 184, 184);
-    // padding: 10px 20px;
-    border-radius: 30px solid black;
-    align-items:flex-start;
-  }
-  .inputfield{
-    padding:8px;
-   
-  }
-  .btncontainer{
-    justify-content: space-between;
-  }
-  .cancelbtn{
-    background-color:blue;
-    padding:10px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    width: 80px;
-    height:45px;
-    text-align: center;
-   
-  }
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //height: 100vh;
+  background-color: #002b36; /* Dark background color */
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.signup-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.signup-text a {
+  text-decoration: none;
+  color: #007bff;
+}
