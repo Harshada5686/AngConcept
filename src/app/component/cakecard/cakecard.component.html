@@ -1,0 +1,13 @@
+<div class="card mt-3 " style="width: 100%;">
+    <img [src]="ME?.image" class="card-img-top mt-3" alt="Vanilla Cake" style="height:170px; width: 50%; align-self: center;">
+    <div class="card-body">
+      <h5 class="card-title">  {{ ME?.title.substring(0, 22) }}...</h5>
+      <p class="card-text">{{ME?.price}}</p>
+      <p class="card-text">{{ME?.weight}}</p>
+      <p class="card-text">
+        {{ ME?.description.substring(0, 50) }}...
+      </p>
+      <a href="#" class="btn btn-primary">Add to box</a>
+    </div>
+  </div>
+  
