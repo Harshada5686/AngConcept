@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Status } from '../../status.enum';
-import { CommonModule } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './component/header/header.component';
 import { CakecardComponent } from './component/cakecard/cakecard.component';
-
+import { CommonModule } from '@angular/common';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, HeaderComponent,CakecardComponent],
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule,HeaderComponent,CakecardComponent,MatFormFieldModule,CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
