@@ -8,5 +8,5 @@ import { Component, Input, input } from '@angular/core';
   styleUrl: './cakecard.component.scss'
 })
 export class CakecardComponent {
-  @Input() product:any;
+  @Input() ME:any;
 }
