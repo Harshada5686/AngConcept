@@ -15,6 +15,7 @@ export class HeaderComponent {
   openDialog(): void {
     const dialogRef = this.dialog.open(LoginComponent, {
       width: '300px' // Set the width of the dialog
+      
     });
 
     dialogRef.afterClosed().subscribe(result => {

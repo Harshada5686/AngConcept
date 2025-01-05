@@ -1,3 +1,37 @@
 ::ng-deep .mat-dialog-container {
     width: 300px;
   }
+  // :host {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
+  .example-container{
+    display: flex;
+    justify-content:flex-start;
+    background-color: red;
+  }
+  .loginform{
+    background-color: rgb(124, 184, 184);
+    // padding: 10px 20px;
+    border-radius: 30px solid black;
+    align-items:flex-start;
+  }
+  .inputfield{
+    padding:8px;
+   
+  }
+  .btncontainer{
+    justify-content: space-between;
+  }
+  .cancelbtn{
+    background-color:blue;
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 80px;
+    height:45px;
+    text-align: center;
+   
+  }
