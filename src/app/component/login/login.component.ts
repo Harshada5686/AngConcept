@@ -10,8 +10,8 @@ import {FormBuilder, FormControl, FormsModule, ReactiveFormsModule} from '@angul
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [MatDialogModule,MatFormFieldModule,FormsModule, MatIconModule,MatSelectModule, MatRadioModule, ReactiveFormsModule],
+  // standalone: true,
+  // imports: [MatDialogModule,MatFormFieldModule,FormsModule, MatIconModule,MatSelectModule, MatRadioModule, ReactiveFormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
