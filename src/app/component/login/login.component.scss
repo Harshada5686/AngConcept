@@ -1,37 +1,34 @@
 ::ng-deep .mat-dialog-container {
     width: 300px;
   }
-  // :host {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: flex-start;
-  // }
-  .example-container{
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content:flex-start;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
   }
-  .loginform{
-    background-color: rgb(124, 184, 184);
-    // padding: 10px 20px;
-    border-radius: 30px solid black;
-    align-items:flex-start;
+  
+  mat-form-field {
+    margin-bottom: 15px;
   }
-  .inputfield{
-    padding:8px;
-   
-  }
-  .btncontainer{
-    justify-content: space-between;
-  }
-  .cancelbtn{
-    background-color:blue;
-    padding:10px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    width: 80px;
-    height:45px;
+  div {
+    max-width: 400px;
+    margin: auto;
     text-align: center;
-   
   }
+  
+  mat-form-field {
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  button {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  
