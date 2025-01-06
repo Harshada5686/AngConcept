@@ -4,12 +4,13 @@
   align-items: center;
   //height: 100vh;
   background-color: #002b36; /* Dark background color */
+  
 }
 
 .login-form {
   width: 300px;
   padding: 20px;
-  background: white;
+  background:white;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -30,15 +31,18 @@
   width: 100%;
   padding: 10px;
   font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
 }
 
 .signup-text {
   margin-top: 10px;
   font-size: 14px;
-  color: gray;
+  color: rgb(12, 73, 185);
 }
 
 .signup-text a {
   text-decoration: none;
-  color: #007bff;
+  color: #0257b2;
 }

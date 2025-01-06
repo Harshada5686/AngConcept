@@ -8,10 +8,11 @@ import { HeaderComponent } from './component/header/header.component';
 import { CakecardComponent } from './component/cakecard/cakecard.component';
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FooterComponent } from './component/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule,HeaderComponent,CakecardComponent,MatFormFieldModule,CommonModule],
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule,HeaderComponent,CakecardComponent,MatFormFieldModule,CommonModule,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
