@@ -19,13 +19,16 @@
           <li class="nav-item">
             <a class="nav-link mx-2 ">Contact Us</a>
           </li>
+          <!-- <mat-icon>add_shopping_cart</mat-icon>  -->
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-flex" >
           <button class="btn btn-outline-success mx-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal" (click)="openDialog()">
             Login
           </button>
           
-          <button class="btn btn-outline-success me-5 mx-2" type="submit">Signup</button>
+          <button class="btn btn-outline-success mx-2" type="submit">Signup</button>
+          <button class="btn btn-outline-success mx-2" type="submit" (click)="openDialog()">Add to cart</button>
+
         </form>
       </div>
     </div>

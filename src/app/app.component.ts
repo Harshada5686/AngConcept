@@ -9,10 +9,14 @@ import { CakecardComponent } from './component/cakecard/cakecard.component';
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FooterComponent } from './component/footer/footer.component';
+import { CartdialogComponent } from './component/cartdialog/cartdialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatDialog,} from '@angular/material/dialog';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule,HeaderComponent,CakecardComponent,MatFormFieldModule,CommonModule,FooterComponent],
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule,HeaderComponent,CakecardComponent,MatFormFieldModule,CommonModule,FooterComponent,MatDialog],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -142,4 +146,28 @@ export class AppComponent {
       }
     },
   ];
+  constructor(public dialog :MatDialogModule){
+
+  }
+  
+  // openDialog() {
+  //   this.dialog.open(CartdialogComponent, {
+     
+  //   });
+  // }
+
+  openDialog(): void {
+      const dialogRef = this.dialog.open(CartdialogComponent, {
+        width: '300px' // Set the width of the dialog
+        
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        if (result) {
+          console.log('Saved input value:', result); // Print the input value after dialog close
+        } else {
+          console.log('Dialog closed without saving');
+        }
+      });
+    }
 }

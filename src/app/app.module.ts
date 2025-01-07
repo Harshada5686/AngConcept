@@ -11,6 +11,10 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HeaderComponent } from './component/header/header.component';
 import {FormBuilder, FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { CartdialogComponent } from './component/cartdialog/cartdialog.component';
+import {MatDialog,} from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -19,13 +23,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     CakecardComponent,
     FooterComponent,
     HeaderComponent,
+    CartdialogComponent
 
   ],
   imports: [
-    BrowserModule,MatDialogModule,MatFormFieldModule,FormsModule, MatIconModule,MatSelectModule, MatRadioModule, ReactiveFormsModule,FormBuilder,FormControl,
+    BrowserModule,MatDialogModule,MatFormFieldModule,FormsModule, MatIconModule,MatSelectModule, MatRadioModule, ReactiveFormsModule,FormBuilder,FormControl,MatDialog,
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}
